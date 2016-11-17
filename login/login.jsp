@@ -1,8 +1,8 @@
 <%@ page import ="java.sql.*" %>
 <%@ page import ="java.security.MessageDigest" %>
-<%@ include file="redirect.jsp" %>
+<%@ include file="loginredirect.jsp" %>
 <%
-    flag=0;
+    int flag=0;
     String userid = request.getParameter("user");    
     String pwd = request.getParameter("pass");
     session.setAttribute("userid",userid);
